@@ -1,0 +1,15 @@
+.contact {
+  padding: 3em 2em;
+  background: $color__gradient;
+  color: white;
+  font-family: $font__header;
+}
+
+.two-up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  div {
+    width: calc(50% - 1em);
+  }
+}

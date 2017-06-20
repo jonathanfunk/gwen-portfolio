@@ -5,7 +5,7 @@ $base__space-unit: 1.5rem;
 // Colors
 
 $color__background-body: #fff;
-$color__text-main: #404040;
+$color__text-main: #4A4A4A;
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
@@ -19,9 +19,13 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+$color__button: #F5699E;
+$color__gradient: linear-gradient(225.15deg, #F4699E 0%, #9762E1 77.32%, #9862E1 77.58%, #9762E1 78.7%, #9862E1 81.67%, #6E73D6 100%);
+
 // Typography
 
 $font__main: sans-serif;
+$font__header: Raleway, sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
