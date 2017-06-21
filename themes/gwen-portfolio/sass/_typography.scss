@@ -8,8 +8,7 @@ input,
 select,
 textarea {
 	color: $color__text-main;
-	font-family: $font__main;
-	@include font-size(1);
+	font: $font__base-size $font__main;
 	line-height: $font__line-height-body;
 }
 
@@ -19,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font__header;
 	text-transform: uppercase;
 	clear: both;
+	margin-top: 0;
 }
 
 /* Copy */

@@ -9,7 +9,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-      <section class="header">
+      <section class="hero">
+        <div class="hero-content">
+          <img src="<?php echo get_template_directory_uri() . '/assets/hero-logo.svg'; ?>" alt="Gwen Gong Logo" />
+          <h1>Gwen Gong</h1>
+          <p>There is no absolute right and wrong, only different perspective.</p>
+        </div>
       </section>
       <section class="about">
       </section>

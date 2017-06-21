@@ -24,6 +24,18 @@ a {
 	}
 }
 
+/* Header */
+
+.site-header {
+  height: 76px;
+  width: 100%;
+  background: url(../../assets/navi-heading-background.svg) no-repeat center;
+  background-size: contain;
+  position: fixed;
+  z-index: 2;
+  padding: 1em 2em;
+}
+
 /* Menus */
 
 .main-navigation {
