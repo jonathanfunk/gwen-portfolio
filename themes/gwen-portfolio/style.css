@@ -709,7 +709,7 @@ object {
     margin-bottom: 35px; }
 
 .projects {
-  padding: 3em 0em; }
+  padding: 3em 0em 0em; }
 
 .projects-list {
   list-style: none;
@@ -726,6 +726,7 @@ object {
       text-align: left;
       color: white; }
     .projects-list .project-info a {
+      font-family: Raleway, sans-serif;
       width: 100%;
       display: block;
       padding: 1em;
@@ -742,6 +743,34 @@ object {
   .projects-list img {
     display: block; }
 
+.resume {
+  background: url(../../assets/left-side-decor.svg) no-repeat center;
+  text-align: center; }
+  .resume .rounded {
+    font-family: Raleway, sans-serif;
+    max-width: 650px;
+    display: block;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background: #F5699E;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border-radius: 50px;
+    transition: all 1s ease; }
+    .resume .rounded:hover {
+      background: white;
+      color: #F5699E; }
+  .resume .email {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 1s ease;
+    color: #4A4A4A; }
+    .resume .email:hover {
+      color: #F5699E; }
+
 .contact {
   background: linear-gradient(225.15deg, #F4699E 0%, #9762E1 77.32%, #9862E1 77.58%, #9762E1 78.7%, #9862E1 81.67%, #6E73D6 100%);
   color: white;
@@ -757,4 +786,5 @@ object {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .two-up div {
-    width: calc(50% - 1em); }
+    width: calc(50% - 1em);
+    margin-bottom: 1.5em; }

@@ -61,6 +61,13 @@ get_header(); ?>
         </div>
       </section>
       <section class="resume">
+        <div class="container">
+          <h2>Resume</h2>
+          <a class="rounded" href="<?php echo CFS()->get('resume'); ?>" download>Download Resume Here</a>
+          <p>Contact me here:</br>
+          <a class="email" href="mailto:gwengong@hotmail.com">gwengong@hotmail.com</a>
+          </p>
+        </div>
       </section>
       <section class="contact">
         <div class="container">
