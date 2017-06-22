@@ -20,16 +20,35 @@ get_header(); ?>
       <section class="about">
         <div class="container">
           <h2>About Me</h2>
-          <p><?php echo CFS()->get( 'about' ); ?></p>
+          <div class="about-wrap">
+            <img src="<?php echo get_template_directory_uri() . '/assets/gwen.png'; ?>" alt="Gwen Gong Logo" />
+            <p><?php echo CFS()->get( 'about' ); ?></p>
+          </div>
           <ul class="social-icons">
             <li>
-              <a href="#">
-                <div class="front">
+              <a href="https://www.linkedin.com/in/gwen-gong-63056751/" target="_blank">
+                <div class="front linkedin-front">
                 </div>
-                <div class="back">
+                <div class="back linkedin-back">
                 </div>
               </a>
             </li>
+            <li>
+              <a href="https://www.instagram.com/gwengong/" target="_blank">
+                <div class="front instagram-front">
+                </div>
+                <div class="back instagram-back">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@gwengong77" target="_blank">
+                <div class="front medium-front">
+                </div>
+                <div class="back medium-back">
+                </div>
+              </a>
+            </li>            
           </ul>
         </div>
       </section>

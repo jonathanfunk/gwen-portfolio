@@ -425,7 +425,7 @@ a {
 .site-header {
   height: 76px;
   width: 100%;
-  background: url(../../assets/navi-heading-background.svg) no-repeat center top;
+  background: url(../../assets/navi-heading-background.svg) no-repeat center bottom;
   background-size: cover;
   position: fixed;
   z-index: 2;
@@ -707,6 +707,71 @@ object {
   .hero-content img {
     width: 150px;
     margin-bottom: 35px; }
+
+.about-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .about-wrap img {
+    width: 250px; }
+
+.social-icons {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  max-width: 320px; }
+  .social-icons a {
+    transition: all .3s ease-out;
+    width: 68px;
+    height: 68px;
+    position: relative;
+    transform-style: preserve-3d;
+    display: block;
+    border-radius: 100%; }
+  .social-icons li:hover a {
+    transform: rotateY(180deg); }
+  .social-icons .front,
+  .social-icons .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 68px; }
+  .social-icons .front {
+    z-index: 2; }
+  .social-icons .back {
+    z-index: 1;
+    transform: rotateY(180deg); }
+  .social-icons .linkedin-front {
+    background: url(../../assets/linkedin-icon.svg) no-repeat;
+    background-size: contain; }
+  .social-icons .linkedin-back {
+    background: url(../../assets/linkedin-hover.svg) no-repeat;
+    background-size: contain; }
+  .social-icons .instagram-front {
+    background: url(../../assets/ins.svg) no-repeat;
+    background-size: contain; }
+  .social-icons .instagram-back {
+    background: url(../../assets/ins-hover.svg) no-repeat;
+    background-size: contain; }
+  .social-icons .medium-front {
+    background: url(../../assets/medium.svg) no-repeat;
+    background-size: contain; }
+  .social-icons .medium-back {
+    background: url(../../assets/medium-hover.svg) no-repeat;
+    background-size: contain; }
 
 .projects {
   padding: 3em 0em 0em; }
