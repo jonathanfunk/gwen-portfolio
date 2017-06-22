@@ -239,11 +239,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
   clear: both;
-  margin-top: 0; }
+  margin-top: 0;
+  color: #F5699E;
+  text-align: center; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  margin-top: 0; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -422,8 +425,8 @@ a {
 .site-header {
   height: 76px;
   width: 100%;
-  background: url(../../assets/navi-heading-background.svg) no-repeat center;
-  background-size: contain;
+  background: url(../../assets/navi-heading-background.svg) no-repeat center top;
+  background-size: cover;
   position: fixed;
   z-index: 2;
   padding: 1em 2em; }
@@ -603,6 +606,9 @@ a {
   display: block; }
 
 /* Structure */
+section {
+  padding: 3em 2em; }
+
 .container {
   max-width: 1080px;
   margin: 0 auto; }
@@ -702,11 +708,46 @@ object {
     width: 150px;
     margin-bottom: 35px; }
 
+.projects {
+  padding: 3em 0em; }
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 420px; }
+  .projects-list .project-info {
+    color: white;
+    background: #F5699E;
+    padding: 2em 2em; }
+    .projects-list .project-info h3 {
+      margin: 0;
+      text-align: left;
+      color: white; }
+    .projects-list .project-info a {
+      width: 100%;
+      display: block;
+      padding: 1em;
+      text-align: center;
+      text-transform: uppercase;
+      border: 2px solid white;
+      text-decoration: none;
+      color: white;
+      border-radius: 50px;
+      transition: all 1s ease; }
+      .projects-list .project-info a:hover {
+        background: white;
+        color: #F5699E; }
+  .projects-list img {
+    display: block; }
+
 .contact {
-  padding: 3em 2em;
   background: linear-gradient(225.15deg, #F4699E 0%, #9762E1 77.32%, #9862E1 77.58%, #9762E1 78.7%, #9862E1 81.67%, #6E73D6 100%);
   color: white;
   font-family: Raleway, sans-serif; }
+  .contact h2 {
+    color: white; }
 
 .two-up {
   display: -ms-flexbox;

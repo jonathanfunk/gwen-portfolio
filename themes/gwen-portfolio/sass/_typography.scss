@@ -19,12 +19,15 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	clear: both;
 	margin-top: 0;
+	color: $color__button;
+  text-align: center;
 }
 
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	margin-top: 0;
 }
 
 dfn, cite, em, i {

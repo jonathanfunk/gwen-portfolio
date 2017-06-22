@@ -1,8 +1,10 @@
 .contact {
-  padding: 3em 2em;
   background: $color__gradient;
   color: white;
   font-family: $font__header;
+    h2 {
+    color: white;
+  }
 }
 
 .two-up {
