@@ -11,14 +11,16 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
       <section class="hero">
         <div class="hero-content">
-          <img src="<?php echo get_template_directory_uri() . '/assets/hero-logo.svg'; ?>" alt="Gwen Gong Logo" />
+          <img class="logo" src="<?php echo get_template_directory_uri() . '/assets/hero-logo.svg'; ?>" alt="Gwen Gong Logo" />
           <h1>Gwen Gong</h1>
+          <img class="name" src="<?php echo get_template_directory_uri() . '/assets/gwen-gong.svg'; ?>" alt="Gwen Gong Logo" />
           <p>There is no absolute right and wrong, only different perspective.</p>
           <p><?php echo CFS()->get( 'hero-blurb' ); ?></p>
         </div>
       </section>
       <section class="about">
-        <div class="container">
+        <img class='big-header' src="<?php echo get_template_directory_uri() . '/assets/about-me.svg'; ?>" alt="About Me" />
+        <div class="container padding">
           <h2>About Me</h2>
           <div class="about-wrap">
             <img src="<?php echo get_template_directory_uri() . '/assets/gwen.png'; ?>" alt="Gwen Gong Logo" />
@@ -54,6 +56,7 @@ get_header(); ?>
       </section>
       <section class="projects">
         <h2>Projects</h2>
+                <img class='big-header' src="<?php echo get_template_directory_uri() . '/assets/project.png'; ?>" alt="Project" />
         <div class="container">
           <ul class="projects-list">
             <?php
@@ -80,7 +83,8 @@ get_header(); ?>
         </div>
       </section>
       <section class="resume">
-        <div class="container">
+        <img class='big-header' src="<?php echo get_template_directory_uri() . '/assets/resume.svg'; ?>" alt="Resume" />
+        <div class="container padding">
           <h2>Resume</h2>
           <a class="rounded" href="<?php echo CFS()->get('resume'); ?>" download>Download Resume Here</a>
           <p>Contact me here:</br>
@@ -89,7 +93,7 @@ get_header(); ?>
         </div>
       </section>
       <section class="contact">
-        <div class="container">
+        <div class="container padding">
          <h2>Leave me a message</h2>
          <?php echo do_shortcode( '[contact-form-7 id="6" title="Contact form 1"]' ); ?>
         </div>

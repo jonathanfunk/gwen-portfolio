@@ -23,11 +23,20 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+h2 {
+  @include tablet {
+    font-size: 0;
+  }
+}
+
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
 	margin-top: 0;
+	@include tablet {
+    font-size: 2rem;
+  }
 }
 
 dfn, cite, em, i {

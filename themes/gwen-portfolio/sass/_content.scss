@@ -51,10 +51,22 @@
 /* Structure */
 
 section {
-  padding: 3em 2em;
+  padding-top: 3em;
 }
 
 .container {
   max-width: 1080px;
   margin: 0 auto;
+}
+
+.padding {
+	padding: 0 2em 3em;
+}
+
+.big-header {
+  display: none;
+  @include tablet {
+    display: block;
+    margin-bottom: 5em;
+  }
 }

@@ -27,13 +27,16 @@ a {
 /* Header */
 
 .site-header {
-  height: 76px;
   width: 100%;
   background: url(../../assets/navi-heading-background.svg) no-repeat center bottom;
   background-size: cover;
   position: fixed;
   z-index: 2;
   padding: 1em 2em;
+  .container {
+	display: flex;
+  	justify-content: space-between;
+  }
 }
 
 /* Menus */
@@ -42,7 +45,6 @@ a {
 	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
 
 	ul {
 		display: none;
@@ -113,7 +115,7 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
 	.menu-toggle {
 		display: none;
 	}

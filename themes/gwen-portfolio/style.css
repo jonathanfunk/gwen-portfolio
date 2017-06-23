@@ -231,22 +231,29 @@ input,
 select,
 textarea {
   color: #4A4A4A;
-  font: 20px sans-serif;
+  font: 20px "Lato", sans-serif;
   line-height: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   clear: both;
   margin-top: 0;
   color: #F5699E;
   text-align: center; }
 
+@media (min-width: 800px) {
+  h2 {
+    font-size: 0; } }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem;
   margin-top: 0; }
+  @media (min-width: 800px) {
+    p {
+      font-size: 2rem; } }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -356,7 +363,7 @@ input[type="submit"] {
   background: #F5699E;
   box-shadow: none;
   color: white;
-  font: 1em Raleway, sans-serif;
+  font: 1em "Raleway", sans-serif;
   text-shadow: none;
   text-transform: uppercase;
   width: 100%;
@@ -423,20 +430,23 @@ a {
 
 /* Header */
 .site-header {
-  height: 76px;
   width: 100%;
   background: url(../../assets/navi-heading-background.svg) no-repeat center bottom;
   background-size: cover;
   position: fixed;
   z-index: 2;
   padding: 1em 2em; }
+  .site-header .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
 
 /* Menus */
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: left; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -472,7 +482,7 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 800px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -607,11 +617,21 @@ a {
 
 /* Structure */
 section {
-  padding: 3em 2em; }
+  padding-top: 3em; }
 
 .container {
   max-width: 1080px;
   margin: 0 auto; }
+
+.padding {
+  padding: 0 2em 3em; }
+
+.big-header {
+  display: none; }
+  @media (min-width: 800px) {
+    .big-header {
+      display: block;
+      margin-bottom: 5em; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -679,6 +699,7 @@ object {
 /* Front page */
 .hero {
   height: 100vh;
+  background: url(../../assets/hero-image.svg) no-repeat center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -693,9 +714,10 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 300px;
   text-align: center; }
   .hero-content h1 {
     font-size: 1.5em;
@@ -704,9 +726,19 @@ object {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 100%; }
-  .hero-content img {
+    @media (min-width: 800px) {
+      .hero-content h1 {
+        font-size: 0; } }
+  .hero-content .logo {
     width: 150px;
     margin-bottom: 35px; }
+  .hero-content .name {
+    display: none; }
+    @media (min-width: 800px) {
+      .hero-content .name {
+        display: block;
+        margin-bottom: 1rem;
+        max-width: 1000px; } }
 
 .about-wrap {
   display: -ms-flexbox;
@@ -775,6 +807,8 @@ object {
 
 .projects {
   padding: 3em 0em 0em; }
+  .projects .big-header {
+    float: right; }
 
 .projects-list {
   list-style: none;
@@ -791,7 +825,7 @@ object {
       text-align: left;
       color: white; }
     .projects-list .project-info a {
-      font-family: Raleway, sans-serif;
+      font-family: "Raleway", sans-serif;
       width: 100%;
       display: block;
       padding: 1em;
@@ -812,7 +846,7 @@ object {
   background: url(../../assets/left-side-decor.svg) no-repeat center;
   text-align: center; }
   .resume .rounded {
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     max-width: 650px;
     display: block;
     padding: 1em;
@@ -839,9 +873,12 @@ object {
 .contact {
   background: linear-gradient(225.15deg, #F4699E 0%, #9762E1 77.32%, #9862E1 77.58%, #9762E1 78.7%, #9862E1 81.67%, #6E73D6 100%);
   color: white;
-  font-family: Raleway, sans-serif; }
+  font-family: "Raleway", sans-serif; }
   .contact h2 {
     color: white; }
+    @media (min-width: 800px) {
+      .contact h2 {
+        font-size: 2.5rem; } }
 
 .two-up {
   display: -ms-flexbox;

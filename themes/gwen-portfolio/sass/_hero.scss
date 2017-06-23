@@ -1,5 +1,6 @@
 .hero {
   height: 100vh;
+  background: url(../../assets/hero-image.svg) no-repeat center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,8 +10,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  max-width: 300px;
   text-align: center;
   h1 {
     font-size: 1.5em;
@@ -19,9 +20,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 100%;
+    @include tablet {
+      font-size: 0;
+    }
   }
-  img {
+  .logo {
     width: 150px;
     margin-bottom: 35px;
+  }
+  .name {
+    display: none;
+    @include tablet {
+      display: block;
+      margin-bottom: 1rem;
+      max-width: 1000px;
+    }
   }
 }

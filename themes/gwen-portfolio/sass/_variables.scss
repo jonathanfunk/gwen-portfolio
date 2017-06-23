@@ -1,6 +1,7 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$tablet-width: 800px;
 
 // Colors
 
@@ -24,8 +25,8 @@ $color__gradient: linear-gradient(225.15deg, #F4699E 0%, #9762E1 77.32%, #9862E1
 
 // Typography
 
-$font__main: sans-serif;
-$font__header: Raleway, sans-serif;
+$font__main: 'Lato', sans-serif;
+$font__header: 'Raleway', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

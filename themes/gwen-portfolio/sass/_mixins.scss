@@ -10,3 +10,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Center block
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
