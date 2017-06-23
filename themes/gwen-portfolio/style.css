@@ -417,15 +417,10 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+  color: #4A4A4A;
+  transition: color 1s ease; }
+  a:hover {
+    color: #F5699E; }
 
 /* Header */
 .site-header {
@@ -450,7 +445,8 @@ a {
     display: none;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    height: 100%; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -470,8 +466,10 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    display: inline-block;
+    text-transform: uppercase;
+    font: 1.5rem "Raleway", sans-serif;
+    margin-left: 2rem; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -485,7 +483,10 @@ a {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: block; } }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -616,7 +617,8 @@ a {
 
 /* Structure */
 section {
-  padding-top: 3em; }
+  padding-top: 3em;
+  outline: none; }
 
 .container {
   max-width: 1080px;
@@ -630,7 +632,7 @@ section {
   @media (min-width: 800px) {
     .big-header {
       display: block;
-      margin-bottom: 5em; } }
+      margin-bottom: 2em; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -769,10 +771,13 @@ object {
   padding: 0;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 100%;
   max-width: 320px; }
+  @media (min-width: 800px) {
+    .social-icons {
+      max-width: 600px; } }
   .social-icons a {
     transition: all .3s ease-out;
     width: 68px;
@@ -781,6 +786,10 @@ object {
     transform-style: preserve-3d;
     display: block;
     border-radius: 100%; }
+    @media (min-width: 800px) {
+      .social-icons a {
+        width: 125px;
+        height: 125px; } }
   .social-icons li:hover a {
     transform: rotateY(180deg); }
   .social-icons .front,
@@ -792,6 +801,11 @@ object {
     left: 0;
     width: 68px;
     height: 68px; }
+    @media (min-width: 800px) {
+      .social-icons .front,
+      .social-icons .back {
+        width: 125px;
+        height: 125px; } }
   .social-icons .front {
     z-index: 2; }
   .social-icons .back {
@@ -825,8 +839,20 @@ object {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%;
-  max-width: 420px; }
+  width: 100%; }
+  @media (min-width: 800px) {
+    .projects-list li {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      width: 100%;
+      margin-bottom: 125px; }
+      .projects-list li:nth-child(even) img {
+        -ms-flex-order: 1;
+            order: 1; } }
   .projects-list .project-info {
     color: white;
     background: #F5699E;
@@ -850,8 +876,17 @@ object {
       .projects-list .project-info a:hover {
         background: white;
         color: #F5699E; }
+    @media (min-width: 800px) {
+      .projects-list .project-info {
+        width: 35%; }
+        .projects-list .project-info p {
+          font-size: 1rem; } }
   .projects-list img {
     display: block; }
+    @media (min-width: 800px) {
+      .projects-list img {
+        width: 62%;
+        height: auto; } }
 
 .resume {
   background: url(../../assets/left-side-decor.svg) no-repeat center;

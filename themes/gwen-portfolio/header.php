@@ -27,7 +27,12 @@
           </div><!-- .site-branding -->
 
           <nav id="site-navigation" class="main-navigation" role="navigation">
-            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+            <ul>
+							<li><a href="#gwen">Gwen</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#resume">Resume</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
           </nav><!-- #site-navigation -->
         </div>
 			</header><!-- #masthead -->

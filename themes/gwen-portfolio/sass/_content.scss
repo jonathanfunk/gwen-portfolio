@@ -52,6 +52,7 @@
 
 section {
   padding-top: 3em;
+	outline: none;
 }
 
 .container {
@@ -67,6 +68,6 @@ section {
   display: none;
   @include tablet {
     display: block;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
   }
 }
