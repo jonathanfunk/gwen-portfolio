@@ -359,29 +359,28 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: none;
-  border-radius: 25px;
-  background: #F5699E;
   box-shadow: none;
-  color: white;
-  font: 1em "Raleway", sans-serif;
   text-shadow: none;
-  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  max-width: 650px;
   width: 100%;
-  height: 50px; }
+  display: block;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background: #F5699E;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border-radius: 50px;
+  transition: all 1s ease; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa; }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #F5699E;
-    box-shadow: none; }
+    background: white;
+    color: #F5699E; }
 
 /* Fields */
 input[type="text"],
@@ -750,7 +749,19 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .about-wrap img {
-    width: 250px; }
+    max-width: 250px; }
+  @media (min-width: 800px) {
+    .about-wrap {
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+      .about-wrap img {
+        -ms-flex-order: 1;
+            order: 1;
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+        max-width: 400px; } }
 
 .social-icons {
   list-style: none;
