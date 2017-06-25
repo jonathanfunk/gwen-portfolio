@@ -634,6 +634,9 @@ section {
       display: block;
       margin-bottom: 2em; } }
 
+.right {
+  float: right; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -832,8 +835,6 @@ object {
 
 .projects {
   padding: 3em 0em 0em; }
-  .projects .big-header {
-    float: right; }
 
 .projects-list {
   list-style: none;

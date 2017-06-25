@@ -55,7 +55,7 @@ get_header(); ?>
       </section>
       <section class="projects" id="projects">
         <h2>Projects</h2>
-        <img class='big-header' src="<?php echo get_template_directory_uri() . '/assets/project.png'; ?>" alt="Project" />
+        <img class='big-header right' src="<?php echo get_template_directory_uri() . '/assets/project.png'; ?>" alt="Project" />
         <div class="container">
           <ul class="projects-list">
             <?php
@@ -85,10 +85,16 @@ get_header(); ?>
         <img class='big-header' src="<?php echo get_template_directory_uri() . '/assets/resume.svg'; ?>" alt="Resume" />
         <div class="container padding">
           <h2>Resume</h2>
-          <a class="rounded" href="<?php echo CFS()->get('resume'); ?>" download>Download Resume Here</a>
+          <a class="rounded" href="<?php echo CFS()->get('resume'); ?>" target="_blank">Download Resume Here</a>
           <p>Contact me here:</br>
           <a class="email" href="mailto:gwengong@hotmail.com">gwengong@hotmail.com</a>
           </p>
+        </div>
+      </section>
+      <section class="why-me">
+        <img class='big-header right' src="<?php echo get_template_directory_uri() . '/assets/why-me.svg'; ?>" alt="Resume" />
+        <div class="container">
+          <h2>Why Me?</h2>
         </div>
       </section>
       <section class="contact" id="contact">
