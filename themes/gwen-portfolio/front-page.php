@@ -20,6 +20,7 @@ get_header(); ?>
       <section class="about" id="gwen">
         <img class='big-header' src="<?php echo get_template_directory_uri() . '/assets/about-me.svg'; ?>" alt="About Me" />
         <div class="container padding">
+          <a class="center" href="#gwen"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
           <h2>About Me</h2>
           <div class="about-wrap">
             <img src="<?php echo get_template_directory_uri() . '/assets/gwen.png'; ?>" alt="Gwen Gong Logo" />
@@ -54,6 +55,7 @@ get_header(); ?>
         </div>
       </section>
       <section class="projects" id="projects">
+        <a class="center" href="#projects"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
         <h2>Projects</h2>
         <img class='big-header right' src="<?php echo get_template_directory_uri() . '/assets/project.png'; ?>" alt="Project" />
         <div class="container">
@@ -84,6 +86,7 @@ get_header(); ?>
       <section class="resume" id="resume">
         <img class='big-header' src="<?php echo get_template_directory_uri() . '/assets/resume.svg'; ?>" alt="Resume" />
         <div class="container padding">
+          <a class="center" href="#resume"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
           <h2>Resume</h2>
           <a class="rounded" href="<?php echo CFS()->get('resume'); ?>" target="_blank">Download Resume Here</a>
           <p>Contact me here:</br>
@@ -91,10 +94,19 @@ get_header(); ?>
           </p>
         </div>
       </section>
-      <section class="why-me">
-        <img class='big-header right' src="<?php echo get_template_directory_uri() . '/assets/why-me.svg'; ?>" alt="Resume" />
+      <section class="why-me" id="why-me">
+        <img class='big-header right' src="<?php echo get_template_directory_uri() . '/assets/why-me.svg'; ?>" alt="Why me" />
         <div class="container">
+          <a class="center" href="#why-me"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
           <h2>Why Me?</h2>
+          <ul class="why-me-mobile">
+            <li><img src="<?php echo get_template_directory_uri() . '/assets/user-experience.svg'; ?>" alt="User Experience" /></li>
+            <li><img src="<?php echo get_template_directory_uri() . '/assets/psychology.svg'; ?>" alt="Psychology" /></li>
+            <li><img src="<?php echo get_template_directory_uri() . '/assets/business.svg'; ?>" alt="Business" /></li>
+          </ul>
+          <div class="why-me-desktop">
+            <img src="<?php echo get_template_directory_uri() . '/assets/why-me-group.svg'; ?>" alt="Why Me Group" />
+          </div>
         </div>
       </section>
       <section class="contact" id="contact">

@@ -75,3 +75,11 @@ section {
 .right {
 	float: right;
 }
+
+.center {
+	display: block;
+	text-align: center;
+	@include tablet {
+		display: none;
+	}
+}

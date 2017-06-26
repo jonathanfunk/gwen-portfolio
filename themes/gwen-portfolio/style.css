@@ -324,7 +324,9 @@ ul, ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
-  list-style: disc; }
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 ol {
   list-style: decimal; }
@@ -637,6 +639,13 @@ section {
 .right {
   float: right; }
 
+.center {
+  display: block;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .center {
+      display: none; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -843,21 +852,25 @@ object {
   width: 100%; }
   @media (min-width: 800px) {
     .projects-list li {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      -ms-flex-align: center;
-          align-items: center;
+      position: relative;
       width: 100%;
-      margin-bottom: 125px; }
-      .projects-list li:nth-child(even) img {
-        -ms-flex-order: 1;
-            order: 1; } }
+      margin-bottom: 125px;
+      display: -ms-flexbox;
+      display: flex; }
+      .projects-list li:nth-child(even) {
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+        .projects-list li:nth-child(even) .project-info {
+          left: 0; }
+      .projects-list li img {
+        padding-bottom: 50px; } }
   .projects-list .project-info {
     color: white;
     background: #F5699E;
-    padding: 2em 2em; }
+    padding: 2em 2em;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
     .projects-list .project-info h3 {
       margin: 0;
       text-align: left;
@@ -886,7 +899,6 @@ object {
     display: block; }
     @media (min-width: 800px) {
       .projects-list img {
-        width: 62%;
         height: auto; } }
 
 .resume {
@@ -916,6 +928,25 @@ object {
     color: #4A4A4A; }
     .resume .email:hover {
       color: #F5699E; }
+
+.why-me-mobile li {
+  margin-bottom: 85px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+@media (min-width: 800px) {
+  .why-me-mobile {
+    display: none; } }
+
+.why-me-desktop {
+  display: none; }
+  @media (min-width: 800px) {
+    .why-me-desktop {
+      display: block;
+      margin-bottom: 200px; } }
 
 .contact {
   background: linear-gradient(225.15deg, #F4699E 0%, #9762E1 77.32%, #9862E1 77.58%, #9762E1 78.7%, #9862E1 81.67%, #6E73D6 100%);

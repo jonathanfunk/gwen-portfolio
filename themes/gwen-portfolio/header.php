@@ -31,6 +31,7 @@
 							<li><a href="#gwen">Gwen</a></li>
 							<li><a href="#projects">Projects</a></li>
 							<li><a href="#resume">Resume</a></li>
+							<li><a href="#why-me">Why</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
           </nav><!-- #site-navigation -->
