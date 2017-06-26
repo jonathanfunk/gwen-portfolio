@@ -713,6 +713,7 @@ object {
 .hero {
   height: 100vh;
   background: url(../../assets/hero-image.svg) no-repeat center;
+  background-position-y: 120px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -867,10 +868,12 @@ object {
   .projects-list .project-info {
     color: white;
     background: #F5699E;
-    padding: 2em 2em;
-    position: absolute;
-    right: 0;
-    bottom: 0; }
+    padding: 2em 2em; }
+    @media (min-width: 800px) {
+      .projects-list .project-info {
+        position: absolute;
+        right: 0;
+        bottom: 0; } }
     .projects-list .project-info h3 {
       margin: 0;
       text-align: left;
