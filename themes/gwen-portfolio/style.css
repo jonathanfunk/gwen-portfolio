@@ -431,12 +431,14 @@ a {
   background-size: cover;
   position: fixed;
   z-index: 2;
-  padding: 1em 2em; }
+  padding: 1em 1em; }
   .site-header .container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+  .site-header .site-branding img {
+    width: 47px; }
 
 /* Menus */
 .main-navigation {
@@ -950,6 +952,22 @@ object {
     .why-me-desktop {
       display: block;
       margin-bottom: 200px; } }
+
+.favorite-designers {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .favorite-designers li {
+    margin: 0 2rem 1rem; }
+  .favorite-designers img {
+    max-width: 260px; }
+  @media (min-width: 800px) {
+    .favorite-designers {
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .contact {
   background: linear-gradient(225.15deg, #F4699E 0%, #9762E1 77.32%, #9862E1 77.58%, #9762E1 78.7%, #9862E1 81.67%, #6E73D6 100%);

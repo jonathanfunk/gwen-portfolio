@@ -20,10 +20,15 @@ a {
   background-size: cover;
   position: fixed;
   z-index: 2;
-  padding: 1em 2em;
+  padding: 1em 1em;
   .container {
 	display: flex;
   	justify-content: space-between;
+  }
+  .site-branding {
+	  img {
+      width: 47px;
+    }
   }
 }
 
