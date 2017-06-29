@@ -243,9 +243,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #F5699E;
   text-align: center; }
 
-@media (min-width: 800px) {
-  h2 {
-    font-size: 0; } }
+h2 {
+  font-size: 1.3rem; }
+  @media (min-width: 800px) {
+    h2 {
+      font-size: 0; } }
 
 /* Copy */
 p {
@@ -883,6 +885,8 @@ object {
       margin: 0;
       text-align: left;
       color: white; }
+    .projects-list .project-info p {
+      font-size: 1.4rem; }
     .projects-list .project-info a {
       font-family: "Raleway", sans-serif;
       width: 100%;
