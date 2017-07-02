@@ -31,7 +31,32 @@ get_header(); ?>
           <div class="about-wrap">
             <img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" src="<?php echo get_template_directory_uri() . '/assets/gwen.png'; ?>" alt="Gwen Gong Logo" />
             <div class="about-content" data-aos="fade-up" data-aos-duration="3000">
-              <p><?php echo CFS()->get( 'about' ); ?></p>
+              <div class="who">
+                <p><?php echo CFS()->get( 'about' ); ?></p>
+              </div>
+              <div class="interests">
+                <h3>What I like:</h3>
+                <ul class="interests-list">
+                  <?php
+                      $upload_path = content_url() . '/uploads/';
+                      $fields = CFS()->get('interests');
+                      foreach ($fields as $field) {
+                        $interest_picture_ID = $field['interest_picture'];
+                        $interest_picture_ALT = get_post_meta($interest_picture_ID, '_wp_attachment_image_alt', true);
+                        $interest_picture_TITLE = get_the_title($interest_picture_ID);
+                        $interest_picture_URL_data = wp_get_attachment_metadata($interest_picture_ID, true);
+                        $interest_picture_URL = $interest_picture_URL_data["file"];
+                          echo '<li><a class="seven" href="#"';
+                          echo 'data-content="'.$field["interest_description"].'">';
+                          echo '<img src="';
+                          echo $upload_path . $interest_picture_URL;
+                          echo '" title="'.$interest_picture_TITLE.'" alt="';
+                          echo $interest_picture_ALT;
+                          echo '"></a></li>';
+                      }
+                    ?>
+                </ul>
+              </div>
             </div>
           </div>
           <ul class="social-icons" data-aos="fade-up" data-aos-duration="3000">
@@ -87,7 +112,7 @@ get_header(); ?>
                     echo '" title="'.$project_image_TITLE.'" alt="';
                     echo $project_image_ALT;
                     echo '" data-aos="fade-up" data-aos-duration="3000"';
-                    echo '><div class="project-info" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">';
+                    echo '><div class="project-info" data-aos="fade-up" data-aos-duration="3000">';
                     echo '<h3>'.$field["project_name"].'</h3>';
                     echo '<p>Role: '.$field["project_role"].'</br>';
                     echo 'Project Period: '.$field["project_length"].'</p>';
