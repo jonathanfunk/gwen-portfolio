@@ -933,6 +933,9 @@ object {
 .resume {
   background: url(../../assets/left-side-decor.svg) no-repeat center;
   text-align: center; }
+  @media (min-width: 800px) {
+    .resume {
+      background: none; } }
   .resume .rounded {
     font-family: "Raleway", sans-serif;
     max-width: 650px;
@@ -957,6 +960,10 @@ object {
     color: #4A4A4A; }
     .resume .email:hover {
       color: #F5699E; }
+
+@media (min-width: 800px) {
+  .why-me .favorite-designers-header {
+    font-size: 2.5rem; } }
 
 .why-me-mobile li {
   margin-bottom: 85px;

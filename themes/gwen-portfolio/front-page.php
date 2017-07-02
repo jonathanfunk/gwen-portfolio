@@ -18,7 +18,13 @@ get_header(); ?>
         </div>
       </section>
       <section class="about" id="gwen">
-        <img class='big-header' src="<?php echo get_template_directory_uri() . '/assets/about-me.svg'; ?>" alt="About Me" />
+        <img 
+          class='big-header' 
+          src="<?php echo get_template_directory_uri() . '/assets/about-me.svg'; ?>" 
+          alt="About Me"
+          data-aos="fade-up"
+          data-aos-duration="3000"  
+        />
         <div class="container padding">
           <a class="center" href="#gwen"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
           <h2>About Me</h2>
@@ -95,7 +101,13 @@ get_header(); ?>
         </div>
       </section>
       <section class="why-me" id="why-me">
-        <img class='big-header right' src="<?php echo get_template_directory_uri() . '/assets/why-me.svg'; ?>" alt="Why me" />
+        <img 
+          class='big-header right'  
+          src="<?php echo get_template_directory_uri() . '/assets/why-me.svg'; ?>" 
+          alt="Why me"
+          data-aos="fade-up"
+          data-aos-duration="3000" 
+        />
           <div class="container">
             <a class="center" href="#why-me"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
             <h2>Why Me?</h2>
@@ -108,7 +120,7 @@ get_header(); ?>
             <div class="why-me-desktop">
               <img src="<?php echo get_template_directory_uri() . '/assets/why-me-group.svg'; ?>" alt="Why Me Group" />
             </div>
-            <h2>Favorite Designers</h2>
+            <h2 class="favorite-designers-header">Favorite Designers</h2>
             <ul class="favorite-designers">
               <?php
                   $upload_path = content_url() . '/uploads/';
