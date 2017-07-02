@@ -29,10 +29,12 @@ get_header(); ?>
           <a class="center" href="#gwen"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
           <h2>About Me</h2>
           <div class="about-wrap">
-            <img src="<?php echo get_template_directory_uri() . '/assets/gwen.png'; ?>" alt="Gwen Gong Logo" />
-            <p><?php echo CFS()->get( 'about' ); ?></p>
+            <img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" src="<?php echo get_template_directory_uri() . '/assets/gwen.png'; ?>" alt="Gwen Gong Logo" />
+            <div class="about-content" data-aos="fade-up" data-aos-duration="3000">
+              <p><?php echo CFS()->get( 'about' ); ?></p>
+            </div>
           </div>
-          <ul class="social-icons">
+          <ul class="social-icons" data-aos="fade-up" data-aos-duration="3000">
             <li>
               <a href="https://www.linkedin.com/in/gwen-gong-63056751/" target="_blank">
                 <div class="front linkedin-front">
@@ -63,7 +65,12 @@ get_header(); ?>
       <section class="projects" id="projects">
         <a class="center" href="#projects"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
         <h2>Projects</h2>
-        <img class='big-header right' src="<?php echo get_template_directory_uri() . '/assets/project.png'; ?>" alt="Project" />
+        <img 
+          class='big-header right' 
+          src="<?php echo get_template_directory_uri() . '/assets/project.png'; ?>" alt="Project"
+          data-aos="fade-up"
+          data-aos-duration="3000" 
+        />
         <div class="container">
           <ul class="projects-list">
             <?php
@@ -79,7 +86,9 @@ get_header(); ?>
                     echo $upload_path . $project_image_URL;
                     echo '" title="'.$project_image_TITLE.'" alt="';
                     echo $project_image_ALT;
-                    echo '"><div class="project-info"><h3>'.$field["project_name"].'</h3>';
+                    echo '" data-aos="fade-up" data-aos-duration="3000"';
+                    echo '><div class="project-info" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">';
+                    echo '<h3>'.$field["project_name"].'</h3>';
                     echo '<p>Role: '.$field["project_role"].'</br>';
                     echo 'Project Period: '.$field["project_length"].'</p>';
                     echo $field["project_link"];
@@ -90,7 +99,13 @@ get_header(); ?>
         </div>
       </section>
       <section class="resume" id="resume">
-        <img class='big-header' src="<?php echo get_template_directory_uri() . '/assets/resume.svg'; ?>" alt="Resume" />
+        <img 
+          class='big-header' 
+          src="<?php echo get_template_directory_uri() . '/assets/resume.svg'; ?>" 
+          alt="Resume" 
+          data-aos="fade-up" 
+          data-aos-duration="3000"
+        />
         <div class="container padding">
           <a class="center" href="#resume"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
           <h2>Resume</h2>
