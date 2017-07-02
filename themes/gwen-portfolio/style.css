@@ -633,6 +633,9 @@ a {
   display: block; }
 
 /* Structure */
+.site-main {
+  padding-top: 120px; }
+
 section {
   padding-top: 3em;
   outline: none; }
@@ -727,7 +730,7 @@ object {
 /* Front page */
 .hero {
   background: url(../../assets/left-triangle.svg) 0 23% no-repeat, url(../../assets/right-triangle.svg) right 28% no-repeat;
-  height: 100vh;
+  height: calc(100vh - 120px);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -737,7 +740,7 @@ object {
   @media (min-width: 800px) {
     .hero {
       background: url(../../assets/hero-image.svg) no-repeat center;
-      background-position-y: 120px; } }
+      background-size: contain; } }
 
 .hero-content {
   display: -ms-flexbox;

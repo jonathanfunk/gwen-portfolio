@@ -2,13 +2,13 @@
   background: 
     url(../../assets/left-triangle.svg) 0 23% no-repeat, 
     url(../../assets/right-triangle.svg) right 28% no-repeat;
-  height: 100vh;
+  height: calc(100vh - 120px);
   display: flex;
   justify-content: center;
   align-items: center;
   @include tablet {
     background: url(../../assets/hero-image.svg) no-repeat center;
-    background-position-y: 120px;
+    background-size: contain;
   }
 }
 
