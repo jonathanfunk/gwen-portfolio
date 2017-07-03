@@ -909,14 +909,17 @@ object {
     .projects-list li {
       position: relative;
       width: 100%;
-      margin-bottom: 190px;
+      padding-bottom: 190px;
       display: -ms-flexbox;
       display: flex; }
       .projects-list li:nth-child(even) {
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+        background: url(../../assets/4.png) right bottom no-repeat; }
         .projects-list li:nth-child(even) .project-info {
           left: 0; }
+      .projects-list li:nth-child(odd) {
+        background: url(../../assets/left-side-decor.svg) left bottom no-repeat; }
       .projects-list li img {
         padding-bottom: 50px; } }
   .projects-list .project-info {
@@ -927,7 +930,7 @@ object {
       .projects-list .project-info {
         position: absolute;
         right: 0;
-        bottom: 0; } }
+        bottom: 190px; } }
     .projects-list .project-info h3 {
       margin: 0;
       text-align: left;
@@ -1010,19 +1013,23 @@ object {
       display: block;
       margin-bottom: 200px; } }
 
-.favorite-designers {
+.favorite-designers .big-header {
+  margin-bottom: 100px; }
+
+.favorite-designers-list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
-      justify-content: center; }
-  .favorite-designers li {
+      justify-content: center;
+  margin-bottom: 100px; }
+  .favorite-designers-list li {
     margin: 0 2rem 1rem; }
-  .favorite-designers img {
+  .favorite-designers-list img {
     max-width: 260px; }
   @media (min-width: 800px) {
-    .favorite-designers {
+    .favorite-designers-list {
       -ms-flex-pack: distribute;
           justify-content: space-around; } }
 

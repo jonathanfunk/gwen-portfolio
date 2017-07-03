@@ -151,7 +151,6 @@ get_header(); ?>
           <div class="container">
             <a class="center" href="#why-me"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
             <h2>Why Me?</h2>
-            <div class="container">
             <ul class="why-me-mobile">
               <li><img src="<?php echo get_template_directory_uri() . '/assets/user-experience.svg'; ?>" alt="User Experience" /></li>
               <li><img src="<?php echo get_template_directory_uri() . '/assets/psychology.svg'; ?>" alt="Psychology" /></li>
@@ -160,32 +159,34 @@ get_header(); ?>
             <div class="why-me-desktop">
               <img src="<?php echo get_template_directory_uri() . '/assets/why-me-group.svg'; ?>" alt="Why Me Group" />
             </div>
-            <img 
-              class='big-header align-center'  
-              src="<?php echo get_template_directory_uri() . '/assets/favorite-designers.svg'; ?>" 
-              alt="Favorite Designers"
-              data-aos="fade-up"
-              data-aos-duration="3000" 
-            />
-            <h2 class="favorite-designers-header">Favorite Designers</h2>
-            <ul class="favorite-designers">
-              <?php
-                  $upload_path = content_url() . '/uploads/';
-                  $fields = CFS()->get('favorite_designers');
-                  foreach ($fields as $field) {
-                    $designer_picture_ID = $field['designer_picture'];
-                    $designer_picture_ALT = get_post_meta($designer_picture_ID, '_wp_attachment_image_alt', true);
-                    $designer_picture_TITLE = get_the_title($designer_picture_ID);
-                    $designer_picture_URL_data = wp_get_attachment_metadata($designer_picture_ID, true);
-                    $designer_picture_URL = $designer_picture_URL_data["file"];
-                      echo '<li><img src="';
-                      echo $upload_path . $designer_picture_URL;
-                      echo '" title="'.$designer_picture_TITLE.'" alt="';
-                      echo $designer_picture_ALT;
-                      echo '"><h3>'.$field["designer_name"].'</h3>';
-                  }
-                ?>
-            </ul>
+            <div class="favorite-designers">
+              <img 
+                class="big-header align-center"  
+                src="<?php echo get_template_directory_uri() . '/assets/favorite-designers.svg'; ?>" 
+                alt="Favorite Designers"
+                data-aos="fade-up"
+                data-aos-duration="3000" 
+              />
+              <h2 class="favorite-designers-header">Favorite Designers</h2>
+              <ul class="favorite-designers-list">
+                <?php
+                    $upload_path = content_url() . '/uploads/';
+                    $fields = CFS()->get('favorite_designers');
+                    foreach ($fields as $field) {
+                      $designer_picture_ID = $field['designer_picture'];
+                      $designer_picture_ALT = get_post_meta($designer_picture_ID, '_wp_attachment_image_alt', true);
+                      $designer_picture_TITLE = get_the_title($designer_picture_ID);
+                      $designer_picture_URL_data = wp_get_attachment_metadata($designer_picture_ID, true);
+                      $designer_picture_URL = $designer_picture_URL_data["file"];
+                        echo '<li><img src="';
+                        echo $upload_path . $designer_picture_URL;
+                        echo '" title="'.$designer_picture_TITLE.'" alt="';
+                        echo $designer_picture_ALT;
+                        echo '"><h3>'.$field["designer_name"].'</h3>';
+                    }
+                  ?>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
