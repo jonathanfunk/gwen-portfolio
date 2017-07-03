@@ -8,13 +8,13 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
       <section class="hero">
         <div class="hero-content">
           <img class="logo" src="<?php echo get_template_directory_uri() . '/assets/hero-logo.svg'; ?>" alt="Gwen Gong Logo" />
           <h1>Gwen Gong</h1>
           <img class="name" src="<?php echo get_template_directory_uri() . '/assets/gwen-gong.svg'; ?>" alt="Gwen Gong" />
-          <p>There is no absolute right and wrong,</br> only different perspective.</p>
+          <p>There is no absolute right and wrong,<br> only different perspective.</p>
         </div>
       </section>
       <section class="about" id="gwen">
@@ -46,7 +46,7 @@ get_header(); ?>
                         $interest_picture_TITLE = get_the_title($interest_picture_ID);
                         $interest_picture_URL_data = wp_get_attachment_metadata($interest_picture_ID, true);
                         $interest_picture_URL = $interest_picture_URL_data["file"];
-                          echo '<li><a class="seven" href="#"';
+                          echo '<li><a class="seven" href="#" ';
                           echo 'data-content="'.$field["interest_description"].'">';
                           echo '<img src="';
                           echo $upload_path . $interest_picture_URL;
@@ -114,7 +114,7 @@ get_header(); ?>
                     echo '" data-aos="fade-up" data-aos-duration="3000"';
                     echo '><div class="project-info" data-aos="fade-up" data-aos-duration="3000">';
                     echo '<h3>'.$field["project_name"].'</h3>';
-                    echo '<p>Role: '.$field["project_role"].'</br>';
+                    echo '<p>Role: '.$field["project_role"].'<br>';
                     echo 'Project Period: '.$field["project_length"].'</p>';
                     echo $field["project_link"];
                     echo '</div>';
@@ -135,7 +135,7 @@ get_header(); ?>
           <a class="center" href="#resume"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
           <h2>Resume</h2>
           <a class="rounded" href="<?php echo CFS()->get('resume'); ?>" target="_blank">Download Resume Here</a>
-          <p>Contact me here:</br>
+          <p>Contact me here:<br>
           <a class="email" href="mailto:gwengong@hotmail.com">gwengong@hotmail.com</a>
           </p>
         </div>
@@ -148,45 +148,44 @@ get_header(); ?>
           data-aos="fade-up"
           data-aos-duration="3000" 
         />
-          <div class="container">
-            <a class="center" href="#why-me"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
-            <h2>Why Me?</h2>
-            <ul class="why-me-mobile">
-              <li><img src="<?php echo get_template_directory_uri() . '/assets/user-experience.svg'; ?>" alt="User Experience" /></li>
-              <li><img src="<?php echo get_template_directory_uri() . '/assets/psychology.svg'; ?>" alt="Psychology" /></li>
-              <li><img src="<?php echo get_template_directory_uri() . '/assets/business.svg'; ?>" alt="Business" /></li>
+        <div class="container">
+          <a class="center" href="#why-me"><img src="<?php echo get_template_directory_uri() . '/assets/next.svg'; ?>" alt="Next Button" /></a>
+          <h2>Why Me?</h2>
+          <ul class="why-me-mobile">
+            <li><img src="<?php echo get_template_directory_uri() . '/assets/user-experience.svg'; ?>" alt="User Experience" /></li>
+            <li><img src="<?php echo get_template_directory_uri() . '/assets/psychology.svg'; ?>" alt="Psychology" /></li>
+            <li><img src="<?php echo get_template_directory_uri() . '/assets/business.svg'; ?>" alt="Business" /></li>
+          </ul>
+          <div class="why-me-desktop">
+            <img src="<?php echo get_template_directory_uri() . '/assets/why-me-group.svg'; ?>" alt="Why Me Group" />
+          </div>
+          <div class="favorite-designers">
+            <img 
+              class="big-header align-center"  
+              src="<?php echo get_template_directory_uri() . '/assets/favorite-designers.svg'; ?>" 
+              alt="Favorite Designers"
+              data-aos="fade-up"
+              data-aos-duration="3000" 
+            />
+            <h2 class="favorite-designers-header">Favorite Designers</h2>
+            <ul class="favorite-designers-list">
+              <?php
+                  $upload_path = content_url() . '/uploads/';
+                  $fields = CFS()->get('favorite_designers');
+                  foreach ($fields as $field) {
+                    $designer_picture_ID = $field['designer_picture'];
+                    $designer_picture_ALT = get_post_meta($designer_picture_ID, '_wp_attachment_image_alt', true);
+                    $designer_picture_TITLE = get_the_title($designer_picture_ID);
+                    $designer_picture_URL_data = wp_get_attachment_metadata($designer_picture_ID, true);
+                    $designer_picture_URL = $designer_picture_URL_data["file"];
+                      echo '<li><img src="';
+                      echo $upload_path . $designer_picture_URL;
+                      echo '" title="'.$designer_picture_TITLE.'" alt="';
+                      echo $designer_picture_ALT;
+                      echo '"><h3>'.$field["designer_name"].'</h3>';
+                  }
+                ?>
             </ul>
-            <div class="why-me-desktop">
-              <img src="<?php echo get_template_directory_uri() . '/assets/why-me-group.svg'; ?>" alt="Why Me Group" />
-            </div>
-            <div class="favorite-designers">
-              <img 
-                class="big-header align-center"  
-                src="<?php echo get_template_directory_uri() . '/assets/favorite-designers.svg'; ?>" 
-                alt="Favorite Designers"
-                data-aos="fade-up"
-                data-aos-duration="3000" 
-              />
-              <h2 class="favorite-designers-header">Favorite Designers</h2>
-              <ul class="favorite-designers-list">
-                <?php
-                    $upload_path = content_url() . '/uploads/';
-                    $fields = CFS()->get('favorite_designers');
-                    foreach ($fields as $field) {
-                      $designer_picture_ID = $field['designer_picture'];
-                      $designer_picture_ALT = get_post_meta($designer_picture_ID, '_wp_attachment_image_alt', true);
-                      $designer_picture_TITLE = get_the_title($designer_picture_ID);
-                      $designer_picture_URL_data = wp_get_attachment_metadata($designer_picture_ID, true);
-                      $designer_picture_URL = $designer_picture_URL_data["file"];
-                        echo '<li><img src="';
-                        echo $upload_path . $designer_picture_URL;
-                        echo '" title="'.$designer_picture_TITLE.'" alt="';
-                        echo $designer_picture_ALT;
-                        echo '"><h3>'.$field["designer_name"].'</h3>';
-                    }
-                  ?>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
@@ -199,7 +198,7 @@ get_header(); ?>
           src="<?php echo get_template_directory_uri() . '/assets/gwen-gong-white-logo.svg'; ?>" 
           alt="Gwen Gong Logo" 
         />
-         <h4>Thank</br>You</h4>
+         <h4>Thank<br>You</h4>
         </div>
         <img 
           class="contact-group" 

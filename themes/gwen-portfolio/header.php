@@ -20,7 +20,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header">
         <div class="container">
           <div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -28,7 +28,7 @@
 						</a>
           </div><!-- .site-branding -->
 
-          <nav id="site-navigation" class="main-navigation" role="navigation">
+          <nav id="site-navigation" class="main-navigation">
             <ul>
 							<li><a href="#gwen">Gwen</a></li>
 							<li><a href="#projects">Projects</a></li>
