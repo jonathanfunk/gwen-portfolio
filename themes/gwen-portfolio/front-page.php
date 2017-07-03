@@ -60,28 +60,16 @@ get_header(); ?>
             </div>
           </div>
           <ul class="social-icons" data-aos="fade-up" data-aos-duration="3000">
-            <li>
+            <li class="linkedin">
               <a href="https://www.linkedin.com/in/gwen-gong-63056751/" target="_blank">
-                <div class="front linkedin-front">
-                </div>
-                <div class="back linkedin-back">
-                </div>
               </a>
             </li>
-            <li>
+            <li class="instagram">
               <a href="https://www.instagram.com/gwengong/" target="_blank">
-                <div class="front instagram-front">
-                </div>
-                <div class="back instagram-back">
-                </div>
               </a>
             </li>
-            <li>
+            <li class="medium">
               <a href="https://medium.com/@gwengong77" target="_blank">
-                <div class="front medium-front">
-                </div>
-                <div class="back medium-back">
-                </div>
               </a>
             </li>            
           </ul>
