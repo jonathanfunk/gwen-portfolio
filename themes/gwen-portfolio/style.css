@@ -433,7 +433,6 @@ a {
   background-size: cover;
   position: fixed;
   z-index: 2;
-  padding: 0 1rem;
   height: 83px; }
   @media (min-width: 800px) {
     .site-header {
@@ -446,7 +445,8 @@ a {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    height: 100%; }
+    height: 100%;
+    padding: 0 2rem; }
   .site-header .site-branding img {
     width: 47px; }
     @media (min-width: 800px) {
@@ -645,7 +645,7 @@ section {
   margin: 0 auto; }
 
 .padding {
-  padding: 0 2em 3em; }
+  padding: 0 2rem 3em; }
 
 .big-header {
   display: none; }
@@ -656,6 +656,9 @@ section {
 
 .right {
   float: right; }
+
+.align-center {
+  margin: 0 auto; }
 
 .center {
   display: block;
@@ -906,7 +909,7 @@ object {
     .projects-list li {
       position: relative;
       width: 100%;
-      margin-bottom: 125px;
+      margin-bottom: 190px;
       display: -ms-flexbox;
       display: flex; }
       .projects-list li:nth-child(even) {
@@ -987,10 +990,6 @@ object {
     color: #4A4A4A; }
     .resume .email:hover {
       color: #F5699E; }
-
-@media (min-width: 800px) {
-  .why-me .favorite-designers-header {
-    font-size: 2.5rem; } }
 
 .why-me-mobile li {
   margin-bottom: 85px;

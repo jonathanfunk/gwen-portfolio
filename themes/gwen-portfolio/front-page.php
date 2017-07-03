@@ -160,6 +160,13 @@ get_header(); ?>
             <div class="why-me-desktop">
               <img src="<?php echo get_template_directory_uri() . '/assets/why-me-group.svg'; ?>" alt="Why Me Group" />
             </div>
+            <img 
+              class='big-header align-center'  
+              src="<?php echo get_template_directory_uri() . '/assets/favorite-designers.svg'; ?>" 
+              alt="Favorite Designers"
+              data-aos="fade-up"
+              data-aos-duration="3000" 
+            />
             <h2 class="favorite-designers-header">Favorite Designers</h2>
             <ul class="favorite-designers">
               <?php

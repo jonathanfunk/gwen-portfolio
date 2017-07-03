@@ -65,7 +65,7 @@ section {
 }
 
 .padding {
-	padding: 0 2em 3em;
+	padding: 0 2rem 3em;
 }
 
 .big-header {
@@ -78,6 +78,10 @@ section {
 
 .right {
 	float: right;
+}
+
+.align-center {
+  margin: 0 auto;
 }
 
 .center {
