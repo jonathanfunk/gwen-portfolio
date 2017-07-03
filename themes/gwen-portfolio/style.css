@@ -934,9 +934,9 @@ object {
     .projects-list .project-info h3 {
       margin: 0;
       text-align: left;
-      color: white; }
-    .projects-list .project-info p {
-      font-size: 1.4rem; }
+      color: white;
+      font: 1.4rem "Lato", sans-serif;
+      text-transform: none; }
     .projects-list .project-info a {
       font-family: "Raleway", sans-serif;
       width: 100%;
@@ -956,7 +956,7 @@ object {
       .projects-list .project-info {
         width: 35%; }
         .projects-list .project-info p {
-          font-size: 1rem; } }
+          font-size: 1.4rem; } }
   .projects-list img {
     display: block; }
     @media (min-width: 800px) {
@@ -986,6 +986,9 @@ object {
     .resume .rounded:hover {
       background: white;
       color: #F5699E; }
+    @media (min-width: 800px) {
+      .resume .rounded {
+        margin-bottom: 4rem; } }
   .resume .email {
     text-decoration: none;
     font-weight: bold;
@@ -993,6 +996,10 @@ object {
     color: #4A4A4A; }
     .resume .email:hover {
       color: #F5699E; }
+  @media (min-width: 800px) {
+    .resume .container {
+      padding: 1rem 2rem 13rem;
+      background: url(../../assets/4.png) right top no-repeat, url(../../assets/left-side-decor.svg) left bottom no-repeat; } }
 
 .why-me-mobile li {
   margin-bottom: 85px;
@@ -1042,6 +1049,30 @@ object {
     @media (min-width: 800px) {
       .contact h2 {
         font-size: 2.5rem; } }
+  .contact h4 {
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1; }
+    @media (min-width: 800px) {
+      .contact h4 {
+        display: none; } }
+  .contact .contact-logo {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    margin-bottom: 20px; }
+    @media (min-width: 800px) {
+      .contact .contact-logo {
+        width: auto; } }
+  .contact .contact-group {
+    display: none; }
+    @media (min-width: 800px) {
+      .contact .contact-group {
+        display: block;
+        width: 100%;
+        background: white; } }
 
 .two-up {
   display: -ms-flexbox;

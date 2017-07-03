@@ -8,6 +8,33 @@
       font-size: 2.5rem;
     }
   }
+  h4 {
+    color: white;
+    font-family: $font__main;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1;
+    @include tablet {
+      display: none;
+    }
+  }
+  .contact-logo {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    margin-bottom: 20px;
+    @include tablet {
+      width: auto;
+    }
+  }
+  .contact-group {
+    display: none;
+    @include tablet {
+      display: block;
+      width: 100%;
+      background: white;
+    }
+  }
 }
 
 .two-up {
