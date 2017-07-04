@@ -849,27 +849,28 @@ object {
     width: 68px;
     height: 68px;
     display: block;
-    border-radius: 100%; }
+    border-radius: 100%;
+    position: relative; }
     @media (min-width: 800px) {
       .social-icons a {
         width: 125px;
         height: 125px; } }
   .social-icons .linkedin {
-    background: url(../../assets/linkedin-icon.svg) no-repeat;
+    background: url(../../assets/linkedin-icon.svg) no-repeat, url(../../assets/linkedin-hover.svg) no-repeat;
     background-size: contain;
     transition: background-image 0.5s; }
     .social-icons .linkedin:hover {
       background: url(../../assets/linkedin-hover.svg) no-repeat;
       background-size: contain; }
   .social-icons .instagram {
-    background: url(../../assets/ins.svg) no-repeat;
+    background: url(../../assets/ins.svg) no-repeat, url(../../assets/ins-hover.svg) no-repeat;
     background-size: contain;
     transition: background-image 0.5s; }
     .social-icons .instagram:hover {
       background: url(../../assets/ins-hover.svg) no-repeat;
       background-size: contain; }
   .social-icons .medium {
-    background: url(../../assets/medium.svg) no-repeat;
+    background: url(../../assets/medium.svg) no-repeat, url(../../assets/medium-hover.svg) no-repeat;
     background-size: contain;
     transition: background-image 0.5s; }
     .social-icons .medium:hover {
