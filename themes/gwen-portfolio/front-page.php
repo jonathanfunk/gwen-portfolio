@@ -80,7 +80,7 @@ get_header(); ?>
         <h2>Projects</h2>
         <img 
           class='big-header right' 
-          src="<?php echo get_template_directory_uri() . '/assets/project.png'; ?>" alt="Project"
+          src="<?php echo get_template_directory_uri() . '/assets/project.svg'; ?>" alt="Project"
           data-aos="fade-up"
           data-aos-duration="3000" 
         />

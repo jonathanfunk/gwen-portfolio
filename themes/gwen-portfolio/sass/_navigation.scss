@@ -16,7 +16,7 @@ a {
 
 .site-header {
   width: 100%;
-  background: url(../../assets/navi-heading-background.svg) no-repeat center bottom;
+  background: url(../../assets/navi-heading-background.png) no-repeat center bottom;
   background-size: cover;
   position: fixed;
   z-index: 2;
@@ -28,9 +28,8 @@ a {
   .container {
 	  display: flex;
   	justify-content: space-between;
-    align-items: center;
     height: 100%;
-		padding: 0 2rem;
+		padding: 1rem 2rem;
   }
   .site-branding {
 	  img {
@@ -122,8 +121,8 @@ a {
 		display: none;
 	}
 	.main-navigation ul {
-		display: flex;
-    align-items: center;
+		display: block;
+		padding: 1rem 0;
 	}
 }
 
