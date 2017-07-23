@@ -808,26 +808,42 @@ object {
     .about-wrap .about-content {
       margin-right: 2rem; } }
 
-.interests h3 {
-  color: #4A4A4A;
-  font-family: "Lato", sans-serif;
-  text-transform: none;
-  text-align: left;
-  font-size: 2.5rem; }
+.who {
+  margin-bottom: 4rem; }
 
-.interests .interests-list {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  @media (min-width: 800px) {
-    .interests .interests-list {
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
-  .interests .interests-list li {
-    margin-bottom: 2rem; }
+.interests {
+  display: none;
+  margin-bottom: 4rem; }
+  .interests h3 {
+    color: #4A4A4A;
+    font-family: "Lato", sans-serif;
+    text-transform: none;
+    text-align: left;
+    font-size: 2.5rem; }
+  .interests .interests-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    @media (min-width: 800px) {
+      .interests .interests-list {
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+    .interests .interests-list li {
+      margin-bottom: 2rem; }
+
+.toggle {
+  text-align: center; }
+  .toggle .about-button, .toggle .interests-button {
+    cursor: pointer; }
+  .toggle .about-button {
+    font-weight: bold;
+    padding-right: 3rem; }
+  .toggle .interests-button {
+    font-weight: lighter;
+    padding-left: 3rem; }
 
 .social-icons {
   list-style: none;
@@ -912,7 +928,8 @@ object {
       margin: 0;
       text-align: left;
       color: white;
-      font: 1.4rem "Lato", sans-serif;
+      font: 1.6rem "Lato", sans-serif;
+      font-weight: lighter;
       text-transform: none; }
     .projects-list .project-info a {
       font-family: "Raleway", sans-serif;
@@ -933,7 +950,7 @@ object {
       .projects-list .project-info {
         width: 35%; }
         .projects-list .project-info p {
-          font-size: 1.4rem; } }
+          font-size: 1.6rem; } }
   .projects-list img {
     display: block; }
     @media (min-width: 800px) {

@@ -57,6 +57,7 @@ get_header(); ?>
                     ?>
                 </ul>
               </div>
+              <p class="toggle"><span class="about-button">Hi</span> | <span class="interests-button">What I like</span></p>
             </div>
           </div>
           <ul class="social-icons" data-aos="fade-up" data-aos-duration="3000">
