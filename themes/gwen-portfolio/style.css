@@ -804,9 +804,11 @@ object {
         margin-left: 1rem;
         margin-bottom: 3rem;
         max-width: 400px; } }
-  @media (min-width: 800px) {
-    .about-wrap .about-content {
-      margin-right: 2rem; } }
+  .about-wrap .about-content {
+    width: 100%; }
+    @media (min-width: 800px) {
+      .about-wrap .about-content {
+        margin-right: 2rem; } }
 
 .who {
   margin-bottom: 4rem; }
@@ -844,6 +846,18 @@ object {
   .toggle .interests-button {
     font-weight: lighter;
     padding-left: 3rem; }
+
+.show-interests .about-button {
+  font-weight: lighter; }
+
+.show-interests .interests-button {
+  font-weight: bold; }
+
+.show-interests .who {
+  display: none; }
+
+.show-interests .interests {
+  display: block; }
 
 .social-icons {
   list-style: none;
